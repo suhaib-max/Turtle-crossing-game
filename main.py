@@ -1,7 +1,6 @@
 import time
 from turtle import Screen
 from player import Player
-from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
 
@@ -30,6 +29,7 @@ while game_is_on:
 
     if player.is_at_finish_line():
         player.go_to_start()
+        car_manager.level_up()
         
 
 
